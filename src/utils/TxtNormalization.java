@@ -11,8 +11,9 @@ public class TxtNormalization {
 	public static void txtNormalize() {
 		
 		String root = System.getProperty("user.dir");
-		File txtdir = new File(root + "/data/BioNLP-ST-2016_SeeDev-binary_train");
-		File outdir = new File(root + "/data/see-dev/txt-normalization/train");
+		File txtdir = new File(root + "/data/BioNLP-ST-2016_SeeDev-binary_test");
+		File outdir = new File(root + "/data/see-dev/txt-normalization/test");
+		//File outdir = new File(root + "/SeeDev-full_train");
 		
 		if (!outdir.exists())
 			outdir.mkdirs();
